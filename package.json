@@ -1,0 +1,16 @@
+{
+  "name": "flightnetwork_automation",
+  "version": "1.0.0",
+  "description": "Automation case study with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  }
+}
