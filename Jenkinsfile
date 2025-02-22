@@ -12,9 +12,16 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Run Tests') {
+        stage('Parallel') {
             steps {
-                sh 'npm run ci'
+                parallel(
+                    tests: {
+                        sh 'npm run ci'
+                    },
+                    lint: {
+                        sh 'npm run lint'
+                    }
+                )
             }
         }
     }
