@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                npm install
+                sh 'npm install'
             }
         }
         stage('Run Tests') {
             steps {
-                npm run ci
+                sh 'npm run ci'
             }
         }
     }
