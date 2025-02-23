@@ -7,4 +7,4 @@ Automation case study with playwright
 3. checkout the branch: git checkout master
 4. Install dependencies: npm install
 5. Run tests: npm run test
-6. Change to trigger a build on jenkins via webhook
+6. Change to trigger a build on jenkins via webhook1
